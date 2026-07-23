@@ -28,8 +28,8 @@ This project is a plain Java + Maven Appium sample (no test framework) showing h
 Clone the project and install dependencies:
 
 ```bash
-git clone https://github.com/Pcloudy-Sample/PC-appium-java
-cd PC-appium-java
+git clone https://github.com/Pcloudy-Sample/PC-appium-java-testng
+cd PC-appium-java-testng
 mvn clean install
 ```
 
