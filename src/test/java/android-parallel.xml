@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="100" name="Mobile" parallel="tests">
+    <test name="AndroidAppTest 1">
+        <parameter name="manufacturer" value="Samsung"/>
+        <parameter name="version" value="13"/>
+        <parameter name="platform" value="Android"/>
+        <classes>
+            <class name="AndroidAppRunner"/>
+        </classes>
+    </test>
+    <test name="AndroidAppTest 2">
+        <parameter name="manufacturer" value="Samsung"/>
+        <parameter name="version" value="12"/>
+        <parameter name="platform" value="Android"/>
+        <classes>
+            <class name="AndroidAppRunner"/>
+        </classes>
+    </test>
+</suite>
