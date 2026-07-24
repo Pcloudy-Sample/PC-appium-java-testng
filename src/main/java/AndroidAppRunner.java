@@ -26,9 +26,11 @@ public class AndroidAppRunner {
     String folder_name;
     DateFormat df;
 
-    String userName = "anjali.y@opkey.com";
-    String apiKey = "r2s7km88f328xrzqz58rtk5c";
-    String hubUrl = "https://device.pcloudy.com/appiumcloud/wd/hub";
+    public static String userName = System.getenv("PCLOUDY_USERNAME") == null ? "Enter your email-id"
+            : System.getenv("PCLOUDY_USERNAME");
+    public static String apiKey = System.getenv("PCLOUDY_APIKEY") == null ? "Enter your API Key"
+            : System.getenv("PCLOUDY_APIKEY");
+    String hubUrl = "APPIUM_HUB_URL"; // Replace with your Appium Hub URL
 
     @BeforeMethod
     public void prepareTest() throws IOException, InterruptedException {
